@@ -4,254 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Via Fermenta - Promotion de la fermentation naturelle</title>
-    <style>
-        :root {
-            --primary-color: #1A473E;
-            --accent-color: #D88134;
-            --bg-color: #FAF3EB;
-            --text-color: #333333;
-            --light-accent: #F5EFE6;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        header {
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .logo {
-            max-width: 200px;
-            margin-bottom: 1rem;
-        }
-        
-        .bubble {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: var(--accent-color);
-            margin: 0 5px;
-            opacity: 0.8;
-            animation: bubble 4s infinite ease-in-out;
-            position: relative;
-        }
-        
-        .bubble:nth-child(1) {
-            animation-delay: 0.2s;
-            width: 15px;
-            height: 15px;
-        }
-        
-        .bubble:nth-child(2) {
-            animation-delay: 1.7s;
-            width: 12px;
-            height: 12px;
-        }
-        
-        .bubble:nth-child(3) {
-            animation-delay: 3.1s;
-            width: 18px;
-            height: 18px;
-        }
-        
-        .bubble:nth-child(4) {
-            animation-delay: 2.3s;
-            width: 14px;
-            height: 14px;
-        }
-        
-        .bubble:nth-child(5) {
-            animation-delay: 0.9s;
-            width: 16px;
-            height: 16px;
-        }
-        
-        .bubble:nth-child(6) {
-            animation-delay: 1.2s;
-            width: 10px;
-            height: 10px;
-        }
-        
-        @keyframes bubble {
-            0% { transform: translateY(0) scale(1); opacity: 0.8; }
-            75% { transform: translateY(-15px) scale(1.1); opacity: 0.9; }
-            100% { transform: translateY(-25px) scale(0.2); opacity: 0; }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        section {
-            padding: 4rem 0;
-        }
-        
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        h2 {
-            color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .highlight {
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-        
-        .mission-statement {
-            font-size: 1.3rem;
-            font-style: italic;
-            text-align: center;
-            margin: 1.5rem 0;
-            color: var(--primary-color);
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .feature-card {
-            border: 1px solid var(--accent-color);
-            border-radius: 10px;
-            padding: 2rem;
-            transition: transform 0.3s ease;
-            background-color: transparent;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            background-color: rgba(205, 140, 42, 0.05);
-        }
-        
-        .feature-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .app-promo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background-color: var(--light-accent);
-            border-radius: 10px;
-            padding: 3rem;
-            margin: 3rem 0;
-        }
-        
-        .app-logo {
-            width: 150px;
-            height: 150px;
-            background-color: var(--accent-color);
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-            margin-top: 1.5rem;
-        }
-        
-        .cta-button:hover {
-            background-color: #c67328;
-        }
-        
-        footer {
-            color: var(--text-color);
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-            border-top: 1px solid #ddd;
-        }
-        
-        .contact-info {
-            margin-top: 1rem;
-        }
-        
-        .social-links {
-            margin-top: 1.5rem;
-        }
-        
-        .social-links a {
-            color: var(--primary-color);
-            margin: 0 10px;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.7rem;
-            }
-            
-            .mission {
-                padding: 2rem;
-            }
-            
-            .mission p {
-                font-size: 1.1rem;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
     <header>
@@ -303,7 +56,7 @@
                 
                 <div class="app-promo">
                     <div class="app-logo">
-                        L
+                        <img src="panade/images/icon-panade.png" width="100%">
                     </div>
                     <h3>Application mobile "La panade"</h3>
                     <p>Notre première application vous guide dans la fabrication de votre pain au levain maison. Calculez et planifiez vos fournées avec différentes recettes et méthodes, adaptées aussi bien aux débutants qu'aux boulangers confirmés.</p>
@@ -315,25 +68,24 @@
             <section class="join-section">
                 <h2>Rejoignez-nous dans cette aventure</h2>
                 <p>Que vous soyez un professionnel de la gastronomie, un amateur curieux ou simplement intéressé par les saveurs authentiques, nous vous invitons à rejoindre notre communauté pour explorer ensemble les merveilles de la fermentation naturelle.</p>
-                <a href="#contact" class="cta-button">Contactez-nous</a>
+                <a href="mailto:viafermenta@gmail.com" class="cta-button">Contactez-nous</a>
             </section>
         </div>
     </main>
     
     <footer id="contact">
         <div class="container">
-            <h3>Via fermenta</h3>
+            <!-- <h3>Via fermenta</h3>
             
             <div class="contact-info">
-                <p>Email: contact@viafermenta.org</p>
-                <p>Téléphone: +33 (0)1 XX XX XX XX</p>
-            </div>
+                <p>Email: viafermenta@gmail.com</p>
+            </div> -->
             
-            <div class="social-links">
+            <!-- <div class="social-links">
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">Twitter</a>
-            </div>
+            </div> -->
             
             <p class="copyright">&copy; 2025 Via fermenta. Tous droits réservés.</p>
         </div>

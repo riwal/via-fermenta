@@ -3,223 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'application de boulangerie maison naturelle. Calculer et planifier votre prochaine fournée.">
+    <meta name="keywords" content="panade, lapanade, panada, pain maison, boulangerie, app, levain, miche, foccacia">
+  
     <title>La panade - Faire son pain maison | Via fermenta</title>
-    <style>
-        :root {
-            --primary-color: #1A473E;
-            --accent-color: #D88134;
-            --bg-color: #FAF3EB;
-            --text-color: #333333;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        header {
-            padding: 2rem 0;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            color: var(--accent-color);
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-        }
-        
-        h2 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-        }
-        
-        h3 {
-            font-size: 1.4rem;
-            margin: 1.5rem 0 0.8rem;
-            font-weight: 300;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-        }
-        
-        .subtitle {
-            font-style: italic;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-        }
-        
-        .app-preview {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin: 3rem 0;
-            gap: 2rem;
-        }
-        
-        .app-info {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .app-mockup {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-        }
-        
-        .app-mockup img {
-            max-width: 100%;
-            border-radius: 15px;
-        }
-        
-        .features {
-            margin: 3rem 0;
-        }
-        
-        .feature {
-            margin-bottom: 2rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--accent-color);
-        }
-        
-        .cta {
-            background-color: rgba(216, 129, 52, 0.1);
-            border: 1px solid var(--accent-color);
-            border-radius: 10px;
-            padding: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            margin-top: 1rem;
-        }
-        
-        .cta-button:hover {
-            background-color: #c67328;
-        }
-        
-        .download-section {
-            text-align: center;
-            margin: 3rem 0;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid #ddd;
-            color: #666;
-        }
-        
-        @media (max-width: 768px) {
-            .app-preview {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
     <header>
         <div class="container">
             <a href="../index.html" class="back-link">← Retour à l'accueil Via fermenta</a>
-            <h1>La panade</h1>
-            <p class="subtitle">Pour vous sortir du pétrin !</p>
         </div>
     </header>
     
     <main class="container">
-        <section class="app-preview">
-            <div class="app-info">
-                <p>Le meilleur ami du boulanger maison. La panade vous permet de calculer et planifier la fabrication de pain au levain et viennoiserie en offrant différentes recettes et méthodes. Facile d'utilisation et pleine d'options, cette application s'adresse aux débutants comme aux confirmés.</p>
-                <p>En tant que premier projet de Via fermenta, La panade incarne notre mission de valorisation des techniques de fermentation naturelle, en commençant par l'art ancestral de la fabrication du pain au levain.</p>
-            </div>
-            <div class="app-mockup">
-                <img src="../images/pain.png" alt="Image de pain au levain" width="300px">
-            </div>
-        </section>
-        
-        <section class="features">
-            <h2>Fonctionnalités</h2>
-            
-            <div class="feature">
-                <h3>Planification de vos fournées</h3>
-                <p>La panade calcule automatiquement votre planning en fonction de la recette choisie, de la température ambiante et de vos contraintes personnelles. Ne vous inquiétez plus des timings, l'application s'occupe de tout !</p>
-            </div>
-            
-            <div class="feature">
-                <h3>Recettes variées</h3>
-                <p>Du pain de campagne traditionnel à la focaccia italienne, en passant par les baguettes et les brioches, découvrez une variété de recettes authentiques basées sur la fermentation naturelle.</p>
-            </div>
-            
-            <div class="feature">
-                <h3>Guide pas à pas</h3>
-                <p>Suivez chaque étape avec précision grâce à notre guide détaillé : pétrissage, pointage, façonnage, apprêt et cuisson. Des notifications vous rappellent quand il est temps de passer à l'étape suivante.</p>
-            </div>
-            
-            <div class="feature">
-                <h3>Adaptation intelligente</h3>
-                <p>L'application ajuste les recettes en fonction de la température de votre cuisine, de la quantité souhaitée et de vos préférences. Elle vous permet également de suivre l'évolution de votre levain.</p>
-            </div>
-        </section>
-        
-        <section class="download-section">
-            <h2>Téléchargez La panade dès maintenant</h2>
-            <a class="cta-button" href="https://apps.apple.com/us/app/la-panade/id1566220640">Télécharger sur l'Apple Store</a>
-            <p style="margin-top:1.5em;"><i><small>Bientôt disponible sur Android.</small></i></p>
-        </section>
-        
-        <section class="cta">
-            <h2>Besoin d'aide ?</h2>
-            <p>Si vous avez des questions, des suggestions ou des commentaires sur l'application, n'hésitez pas à nous contacter.</p>
-            <a href="mailto:lapanadeapp@gmail.com" class="cta-button">Contacter le support</a>
-        </section>
+        <div class="content">
+            <img src="images/pain.png" width="300px">
+            <h1>La panade</h1>
+            <h3>Pour vous sortir du pétrin !</h3>
+            <p>Le meilleur ami du boulanger maison. La panade vous permet de calculer et planifier la fabrication de pain au levain et viennoiserie en offrant différentes recettes et méthodes. Facile d'utilisation et pleine d'options, cette application s'adresse aux débutants comme aux confirmés.</p>
+            <br>
+            <!-- <a class="button" href="https://apps.apple.com/us/app/la-panade/id1566220640">Télécharger sur l'Apple store</a> -->
+            <p style=" margin-top:1.5em;"><i><small>Bientôt disponible sur l'Apple store.</small></i></p>
+            <!-- <p style=" margin-top:1.5em;"><i><small>Bientôt disponible sur Android.</small></i></p> -->
+        </div>
     </main>
     
-    <footer>
+    <!-- <footer>
         <div class="container">
             <p>La panade - Un projet de l'association Via fermenta</p>
             <p><a href="../appstore/confidentiality.html">Politique de confidentialité</a> | <a href="../support.html">Support</a></p>
             <p><a href="../index.html">Retour à l'accueil</a></p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

@@ -1,0 +1,231 @@
+
+body{
+  background: #FAF3EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height:100vh;
+  font-family: 'argesta_headlineregular';
+  padding: 24px;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 60px;
+  font-weight: 300;
+  color: #D88134;
+  margin-block-end: auto;
+  margin-block-start: auto;
+}
+h3{
+  font-size: 30px;
+  font-weight: 300;
+  margin-block-end: 1em;
+  margin-block-start: 0.5em;
+}
+p{
+  font-size: 16px;
+  line-height:24px;
+  font-family:Helvetica,Arial,sans-serif;
+  font-weight:300;
+}
+a{
+    color: #D88134;
+    
+}
+
+a.button{
+    background: #D88134;
+    border:none;
+    padding:1em 2em;
+    color:white;
+    
+    text-decoration:none;
+   
+}
+.content{
+align-self: center;
+text-align: center;
+width:100%;
+max-width: 720px;
+}
+@font-face {
+    font-family: 'argesta_headlineregular';
+    src: url('fonts/argestaheadline-regular-webfont.eot');
+    src: url('fonts/argestaheadline-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/argestaheadline-regular-webfont.woff2') format('woff2'),
+         url('fonts/argestaheadline-regular-webfont.woff') format('woff'),
+         url('fonts/argestaheadline-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Style dans le fichier */ 
+
+/* 
+
+ :root {
+            --primary-color: #1A473E;
+            --accent-color: #D88134;
+            --bg-color: #FAF3EB;
+            --text-color: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: var(--accent-color);
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem;
+            font-weight: 300;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        .app-preview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 3rem 0;
+            gap: 2rem;
+        }
+        
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .app-mockup {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .app-mockup img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+        
+        .features {
+            margin: 3rem 0;
+        }
+        
+        .feature {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .cta {
+            background-color: rgba(216, 129, 52, 0.1);
+            border: 1px solid var(--accent-color);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #c67328;
+        }
+        
+        .download-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .app-preview {
+                flex-direction: column;
+            }
+        }
+
+    */ 
