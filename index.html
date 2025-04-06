@@ -13,11 +13,12 @@
     <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
-    <div class="mega-border"></div>
-    <div class="corner corner-top-left"></div>
-    <div class="corner corner-top-right"></div>
-    <div class="corner corner-bottom-left"></div>
-    <div class="corner corner-bottom-right"></div>
+    <!-- <div class="mega-border"></div>
+    <div class="corner corner-top"></div>
+    <div class="corner corner-bottom"></div>
+    <div class="corner corner-right"></div>
+    <div class="corner corner-left"></div> -->
+    <div class="body-container">
     <header>
         <div class="container">
             <div class="logo-container">
@@ -34,11 +35,15 @@
     
     <main>
         <div class="container">
-            <section class="intro">    
-                <h2>Notre mission</h2>            
-                <p><span class="highlight">Via fermenta</span> est une association dédiée à l'art ancestral de la fermentation. Nous nous engageons à préserver et promouvoir les techniques de fermentation naturelle qui façonnent notre patrimoine culinaire depuis des millénaires.</p>
+            <section class="intro">
+                <div class="section-title">
+                    <h3>Via fermenta est une association dédiée à l'art ancestral de la fermentation. </h3>   
+                </div> 
+                <div class="section-content">
+                <p>Nous nous engageons à préserver et promouvoir les techniques de fermentation naturelle qui façonnent notre patrimoine culinaire depuis des millénaires.</p>
                 
                 <p>À travers nos initiatives, nous cherchons à mettre en lumière la richesse des saveurs issues de la fermentation et à valoriser les traditions propres à chaque région, tout en encourageant l'innovation et le partage des connaissances.</p>
+                </div>  
             </section>
             
             <section class="features-section">
@@ -69,10 +74,11 @@
                     <div class="app-logo">
                         <img src="panade/images/icon-panade.png" width="100%">
                     </div>
-                    <h3>Application mobile "La panade"</h3>
-                    <p>Notre première application vous guide dans la fabrication de votre pain au levain maison. Calculez et planifiez vos fournées avec différentes recettes et méthodes, adaptées aussi bien aux débutants qu'aux boulangers confirmés.</p>
-                    <p>Planifiez votre pain, apprenez à maîtriser la fermentation naturelle, et suivez les étapes pas à pas pour un résultat parfait.</p>
-                    <a href="/panade" class="cta-button">En savoir plus</a>
+                    <div class="app-desc">
+                        <h3>La panade</h3>
+                        <p>Une application mobile pour calculez et planifiez vos fournées avec différentes recettes et méthodes, adaptées aussi bien aux débutants qu'aux boulangers confirmés.</p>
+                        <a href="/panade" class="cta-button">En savoir plus</a>
+                    </div>
                 </div>
             </section>
             
@@ -81,14 +87,17 @@
     </main>
     
     <footer id="contact">
+        <div class="footer-top"></div>
         <section class="join-section">
             <h2>Rejoignez-nous dans cette aventure</h2>
             <p>Que vous soyez un professionnel de la gastronomie, un amateur curieux ou simplement intéressé par les saveurs authentiques, nous vous invitons à rejoindre notre communauté pour explorer ensemble les merveilles de la fermentation naturelle.</p>
             <a href="mailto:viafermenta@gmail.com" class="cta-button">Contactez-nous</a>
         </section>
-        <div class="container">
-            <p class="copyright">&copy; 2025 Via fermenta. Tous droits réservés.</p>
-        </div>
+        
     </footer>
+</div>
+<div class="container-copyright">
+    <p class="copyright">&copy; 2025 Via fermenta. Tous droits réservés.</p>
+</div>
 </body>
 </html>
