@@ -37,13 +37,17 @@ a{
 }
 
 a.button{
+    display: inline-block;
     background: #D88134;
-    border:none;
-    padding:1em 2em;
-    color:white;
-    
-    text-decoration:none;
-   
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 1.6em;
+    margin-top: 1.5em;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
 }
 .content{
 align-self: center;
