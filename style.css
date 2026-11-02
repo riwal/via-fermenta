@@ -24,10 +24,16 @@ body {
     box-sizing: border-box;
     padding: 16px;
 }
+
+html:has(.body-container),
+body:has(.body-container) {
+    background-color: var(--accent-color);
+}
 .body-container{
     border: 2px solid var(--accent-color);
     border-radius: 40px;
     overflow: hidden;
+    background-color: var(--bg-color);
 }   
 
 h1 {
@@ -223,7 +229,8 @@ footer .cta-button{
 }
 .copyright{
     font-size: 0.85rem;
-    opacity: 0.5;
+    color: var(--bg-color);
+    opacity: 0.85;
     text-align: end;
     margin-bottom: 0rem;
     margin-top: 1.5rem;
