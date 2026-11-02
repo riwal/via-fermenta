@@ -219,6 +219,13 @@ footer .cta-button{
     color: white;
     border-color: white;
 }
+.footer-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
 .footer-top{
     height: 32px;
     width: 100%;
